@@ -49,33 +49,24 @@ table {
 }
 
 
+
 html{
-    font-size: 100%;
+    font-size: 62.5%;  /*1rem = 10px*/
 }
 
 body{
-    font-size: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 
 header{
     background: lightgrey;
     padding: 50px;
 }
-header h1{
+ h1{
     margin-bottom: 40px;
-    font-size: 2rem;
+    font-size: 5rem;
 }
-
-
-.items{
-    border: 3px solid black;
-    width: 70px;
-    padding: 18px;
-    color: black; 
-    margin: 5px;
-}
-
-
 
 #contain{
     display: flex;
@@ -85,6 +76,18 @@ header h1{
     
     /* border: 4px solid black; */
 }
+.items{
+    border: 3px solid black;
+    width: 50%;
+
+    padding: 18px;
+    color: black; 
+    margin: 5px;
+}
+
+
+
+
 
 
 
@@ -153,3 +156,271 @@ footer p{
     border: 5px solid black;
 }
 
+@media (max-width: 800px){
+    html{
+        font-size: 100%;
+    }
+    
+    body{
+        font-size: 1rem;
+     
+    }
+    
+
+    #container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+      
+        
+     
+    }
+
+    header{
+        background: lightgrey;
+
+     
+    }
+    header h1{
+        margin-bottom: 20px;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .items{
+        border: 3px solid black;
+        width: 70px;
+        padding: 18px;
+        color: black; 
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    
+    #contain{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between;
+       
+   
+        
+        /* border: 4px solid black; */
+    }
+    
+    
+    
+    #first{
+      display: flex;
+      flex-direction: column;    
+     align-items: center;
+    }
+    
+    
+    #item{
+        width: 600px;
+        height: 250px;
+         border: 5px solid black; 
+       
+       
+    }
+    
+    #second{
+       /* border: 3px solid black; */
+       width: 70%;
+       display: flex;
+       flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;  
+    }
+
+    #second h2{
+        font-size: 2.5rem;
+    }
+    
+    
+    .item{
+         width: 235px; 
+         width: 32%; 
+        height: 135px;
+        margin: 60px;
+        border: 3px solid black;
+        
+    }
+    
+    
+    footer{
+        padding: 50px;
+        background-color: lightgrey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    
+    footer button {
+        color: blue;
+        width: 200px;
+        height: 50px;
+           
+    }
+    footer p{
+        margin-bottom: 40px;
+        font-size: 2rem;
+    }
+    
+    #button{
+        width: 200px;
+        height: 50px;
+        
+    }
+    
+    #second p{
+        margin: 10px;
+    }
+    
+    #border{
+        border: 0px solid black;
+    }
+    
+
+}
+@media (max-width: 500px){
+html{
+        font-size: 100%;
+    }
+    
+    body{
+        font-size: 1rem;
+     
+    }
+    
+
+    #container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+      
+        
+     
+    }
+
+    header{
+        background: lightgrey;
+
+     
+    }
+    header h1{
+        margin-bottom: 20px;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .items{
+        border: 3px solid black;
+        width: 70px;
+        padding: 18px;
+        color: black; 
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    
+    #contain{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between;
+       
+   
+        
+        /* border: 4px solid black; */
+    }
+    
+    
+    
+    #first{
+      display: flex;
+      flex-direction: column;    
+     align-items: center;
+    }
+    
+    
+    #item{
+        width: 90%;
+        height: 250px;
+         border: 5px solid black; 
+       
+       
+    }
+    
+    #second{
+       /* border: 3px solid black; */
+       width: 70%;
+       display: flex;
+       flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;  
+    }
+
+    #second h2{
+        font-size: 2.5rem;
+    }
+    
+    
+    .item{
+        width: 23%;
+        height: 3%;
+        margin: 60px;
+        border: 3px solid black;
+    }
+    
+    
+    footer{
+        padding: 50px;
+        background-color: lightgrey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    
+    footer button {
+        color: blue;
+        width: 200px;
+        height: 50px;
+           
+    }
+    footer p{
+        margin-bottom: 40px;
+        font-size: 2rem;
+    }
+    
+    #button{
+        width: 200px;
+        height: 50px;
+        
+    }
+    
+    #second p{
+        margin: 10px;
+    }
+    
+    #border{
+        border: 0px solid black;
+    }
+}
